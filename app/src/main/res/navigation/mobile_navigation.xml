@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_horoscope">
+
+    <fragment
+        android:id="@+id/navigation_horoscope"
+        android:name="com.iehapp.horoscop.ui.horoscope.HoroscopeFragment"
+        android:label="@string/title_horoscope"
+        tools:layout="@layout/fragment_horoscope"/>
+
+    <fragment
+        android:id="@+id/navigation_compatibility"
+        android:name="com.iehapp.horoscop.ui.compatibility.CompatibilityFragment"
+        android:label="@string/title_compatibility"
+        tools:layout="@layout/fragment_compatibility" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.iehapp.horoscop.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
